@@ -7,30 +7,38 @@
     @Styles.Render("~/Content/css")
 </head>
 <body>
-    <div class="navbar navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
+                <a class="navbar-brand" href="#">SoundBox</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav"></ul>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Soundboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        @RenderBody()
+    </div>
+<footer class="hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
             </div>
         </div>
     </div>
-
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
-
+</footer>
     @Scripts.Render("~/Scripts/core")
     @Scripts.Render("~/Scripts/angularjs")
 </body>

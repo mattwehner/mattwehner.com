@@ -20,6 +20,5 @@ C:\Projects\github\personal\mattwehner.com\src\Web\Web\bin\System.Web.Webpages.D
 C:\Projects\github\personal\mattwehner.com\src\Web\Web\bin\System.Web.Webpages.Razor.xml
 C:\Projects\github\personal\mattwehner.com\src\Web\Web\bin\System.Web.Helpers.xml
 C:\Projects\github\personal\mattwehner.com\src\Web\Web\bin\System.Web.Mvc.xml
-C:\Projects\github\personal\mattwehner.com\src\Web\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
 C:\Projects\github\personal\mattwehner.com\src\Web\Web\obj\Debug\Web.dll
 C:\Projects\github\personal\mattwehner.com\src\Web\Web\obj\Debug\Web.pdb
