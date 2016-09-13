@@ -1,9 +1,9 @@
 ﻿var mattwehnerApp = angular.module("mattwehnerApp", [
     "mattwehnerControllers",
-    "mattwehnerRouting",
+    "mattwehnerRouting"
 ]);
 
-var hourfleetControllers = angular.module("mattwehnerControllers", []);
-var hourfleetControllers = angular.module("mattwehnerRouting", [
-    "ui.router",
+var mattwehnerControllers = angular.module("mattwehnerControllers", []);
+var mattwehnerRouting = angular.module("mattwehnerRouting", [
+    "ui.router"
 ]);

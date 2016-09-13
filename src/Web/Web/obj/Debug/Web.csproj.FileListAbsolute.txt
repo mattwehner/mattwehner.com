@@ -22,3 +22,4 @@ C:\Projects\github\personal\mattwehner.com\src\Web\Web\bin\System.Web.Helpers.xm
 C:\Projects\github\personal\mattwehner.com\src\Web\Web\bin\System.Web.Mvc.xml
 C:\Projects\github\personal\mattwehner.com\src\Web\Web\obj\Debug\Web.dll
 C:\Projects\github\personal\mattwehner.com\src\Web\Web\obj\Debug\Web.pdb
+C:\Projects\github\personal\mattwehner.com\src\Web\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache

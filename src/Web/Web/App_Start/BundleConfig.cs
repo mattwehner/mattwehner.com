@@ -23,7 +23,9 @@ namespace Web.App_Start
                     "~/Scripts/angularjs/angular-sanitize.js",
                     "~/Scripts/angular-ui-router/angular-ui-router.js",
                     "~/Scripts/angular-ui-bootstrap/ui-bootstrap.js",
-                    "~/Scripts/angular-ui-bootstrap/ui-bootstrap-tpls.js"
+                    "~/Scripts/angular-ui-bootstrap/ui-bootstrap-tpls.js",
+                    "~/App/*.js",
+                    "~/App/Controllers/*.js"
                 ));
 
             bundles.Add(new StyleBundle("~/Content/css")
