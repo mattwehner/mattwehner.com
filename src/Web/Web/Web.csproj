@@ -98,7 +98,8 @@
     <Content Include="Content\bootstrap\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap\bootstrap.css" />
     <Content Include="Content\bootstrap\bootstrap.min.css" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\generalStyles.css" />
+    <Content Include="Content\site.css" />
     <Content Include="Content\angular-ui-bootstrap\ui-bootstrap-csp.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -159,6 +160,8 @@
     <Content Include="Content\bootstrap\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap\bootstrap.css.map" />
     <Content Include="App\Controllers\root.controller.js" />
+    <Content Include="fonts\Montserrat-Bold.ttf" />
+    <Content Include="fonts\Montserrat-Regular.ttf" />
     <None Include="Scripts\jquery\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery\jquery-1.9.1.min.js" />

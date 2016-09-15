@@ -32,6 +32,7 @@ namespace Web.App_Start
                 .Include(
                     "~/Content/bootstrap/bootstrap.css",
                     "~/Content/bootstrap/bootstrap-theme.css",
+                    "~/Content/generalStyles.css",
                     "~/Content/site.css"
                 ));
 
