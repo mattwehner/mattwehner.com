@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7BA5CD62_002D427D_002D4B68_002DB050_002DF7657154A7EE_002Fd_003AContent/@EntryIndexedValue"></s:String>
+	<s:Boolean x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7BA5CD62_002D427D_002D4B68_002DB050_002DF7657154A7EE_002Fd_003AContent/@EntryIndexRemoved">True</s:Boolean>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7BA5CD62_002D427D_002D4B68_002DB050_002DF7657154A7EE_002Fd_003AScripts/@EntryIndexedValue"></s:String>
+	<s:Boolean x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7BA5CD62_002D427D_002D4B68_002DB050_002DF7657154A7EE_002Fd_003AScripts/@EntryIndexRemoved">True</s:Boolean>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=7BA5CD62_002D427D_002D4B68_002DB050_002DF7657154A7EE_002Fd_003AContent/@EntryIndexedValue">7BA5CD62-427D-4B68-B050-F7657154A7EE/d:Content</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/GeneratedFilesAndFolders/=7BA5CD62_002D427D_002D4B68_002DB050_002DF7657154A7EE_002Fd_003AScripts/@EntryIndexedValue">7BA5CD62-427D-4B68-B050-F7657154A7EE/d:Scripts</s:String>
+	<s:String x:Key="/Default/CodeInspection/GeneratedCode/GeneratedFileMasks/=_002A_002Econfig/@EntryIndexedValue">*.config</s:String>
+	<s:Boolean x:Key="/Default/Environment/UnitTesting/DisabledProviders/=MSTest/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
