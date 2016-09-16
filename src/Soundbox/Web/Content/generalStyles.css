@@ -1,0 +1,55 @@
+﻿@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    font-family: 'Montserrat-Bold', Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+h4, .h4, h5, .h5, h6, .h6, .navbar-default, .btn {
+    font-family: 'Montserrat-Regular', Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+/* Background Colors */
+.navbar-default, #secondary-nav {
+    background-image: none;
+    background-color: #324359;
+}
+
+/* Font Colors */
+.navbar-default .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color: #03e4ac;
+}
+
+/* Borders */
+.navbar, .navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-inverse {
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
+
+/* Menus and Navigation */
+.navbar-brand, .navbar-nav > li > a {
+    text-shadow: none;
+}
+#secondary-nav {
+    height: 60px;
+}
+#secondary-nav .navbar-toggle {
+    display: block;
+}
