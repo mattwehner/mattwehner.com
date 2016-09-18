@@ -127,6 +127,7 @@
     <Content Include="Content\bootstrap\bootstrap.css" />
     <Content Include="Content\bootstrap\bootstrap.min.css" />
     <Content Include="Content\generalStyles.css" />
+    <Content Include="Content\inputStyles.css" />
     <Content Include="Content\site.css" />
     <Content Include="Content\angular-ui-bootstrap\ui-bootstrap-csp.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />

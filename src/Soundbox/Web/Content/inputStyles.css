@@ -1,0 +1,28 @@
+﻿/* Background Colors */
+.btn.btn-round, .btnbtn-round:active, .btnbtn-round:hover, .btnbtn-round:focus, .btnbtn-round:disabled {
+    background: none;
+}
+.btn-default {
+   background-color: #03e4ac; 
+}
+.btn-default:focus, .btn-default:hover, .btn-default:active, .btn-default.btn-round:focus, .btn-default.btn-round:hover, .btn-default.btn-round:active,
+.btn-default:active:hover, .btn-default.btn-round:active:hover {
+    background-color:#10c89a
+}
+
+/* Font Colors */
+.btn-default, .btn-default:focus, .btn-default:hover, .btn-default:active, .btn-default.btn-round:focus, .btn-default.btn-round:hover, .btn-default.btn-round:active {
+    color: white;
+}
+
+.btn-default.btn-round {
+    color: #03e4ac;
+}
+
+/* Border Colors */
+.btn-default {
+    border-color: #03e4ac;
+}
+.btn-default:focus, .btn-default:hover, .btn-default:active {
+    border-color: #10c89a;
+}

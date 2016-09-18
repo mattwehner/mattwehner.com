@@ -13,12 +13,15 @@ h1, .h1, h2, .h2, h3, .h3 {
     text-transform: uppercase;
 }
 
-h4, .h4, h5, .h5, h6, .h6, .navbar-default, .btn {
+h4, .h4, h5, .h5, h6, .h6, .btn {
     font-family: 'Montserrat-Regular', Helvetica Neue, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 
 /* Background Colors */
+html body {
+    background-color: #F1F1F1;
+}
 .navbar-default, #secondary-nav {
     background-image: none;
     background-color: #324359;
@@ -36,20 +39,43 @@ h4, .h4, h5, .h5, h6, .h6, .navbar-default, .btn {
 .navbar, .navbar-default .navbar-toggle {
     border: none;
 }
+.btn-round {
+    border: 2px solid;
+}
 
 .navbar-inverse {
     -ms-border-radius: 0;
     border-radius: 0;
 }
-
+.border-round, .form-control, .btn {
+    border-radius: 25px;
+}
+.input-group .form-control:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
 /* Menus and Navigation */
-.navbar-brand, .navbar-nav > li > a {
-    text-shadow: none;
+.navbar-default {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-#secondary-nav {
-    height: 60px;
+.navbar-toggle {
+    display: inline-block;
 }
-#secondary-nav .navbar-toggle {
-    display: block;
+.navbar-search .input-group {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.navbar-search .btn-round {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/* Forms And Buttons */
+.input-group-btn:last-child .btn {
+    padding-right: 1.3em;
+} 
+.btn-round {
+    box-sizing: border-box;
 }

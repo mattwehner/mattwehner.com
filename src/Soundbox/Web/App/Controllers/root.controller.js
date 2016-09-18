@@ -1,11 +1,11 @@
-﻿mattwehnerControllers.controller("root.controller", [
+﻿soundboxControllers.controller("root.controller", [
     "$scope",
     function(
         $scope) {
         $scope.model = {
 
         };
-        $scope.submit = function() {
+        $scope.search = function() {
             alert($scope.model.search);
         };
     }

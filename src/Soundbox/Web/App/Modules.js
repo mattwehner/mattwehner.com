@@ -1,9 +1,11 @@
-﻿var mattwehnerApp = angular.module("mattwehnerApp", [
-    "mattwehnerControllers",
-    "mattwehnerRouting"
+﻿var soundboxApp = angular.module("soundboxApp", [
+    "soundboxControllers",
+    "soundboxRouting",
+    "soundboxServices"
 ]);
 
-var mattwehnerControllers = angular.module("mattwehnerControllers", []);
-var mattwehnerRouting = angular.module("mattwehnerRouting", [
+var soundboxControllers = angular.module("soundboxControllers", []);
+var soundboxServices = angular.module("soundboxServices", []);
+var soundboxRouting = angular.module("soundboxRouting", [
     "ui.router"
 ]);

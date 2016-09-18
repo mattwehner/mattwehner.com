@@ -31,7 +31,7 @@ namespace Web.App_Start
             bundles.Add(new StyleBundle("~/Content/css")
                 .Include(
                     "~/Content/bootstrap/bootstrap.css",
-                    "~/Content/bootstrap/bootstrap-theme.css",
+                    "~/Content/inputStyles.css",
                     "~/Content/generalStyles.css",
                     "~/Content/site.css"
                 ));
