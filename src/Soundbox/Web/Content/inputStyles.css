@@ -5,13 +5,13 @@
 .btn-default {
    background-color: #03e4ac; 
 }
-.btn-default:focus, .btn-default:hover, .btn-default:active, .btn-default.btn-round:focus, .btn-default.btn-round:hover, .btn-default.btn-round:active,
-.btn-default:active:hover, .btn-default.btn-round:active:hover {
+.btn-default:focus, .btn-default:hover, .btn-default:active, .btn-default:active:focus, .btn-default:active:hover {
     background-color:#10c89a
 }
 
 /* Font Colors */
-.btn-default, .btn-default:focus, .btn-default:hover, .btn-default:active, .btn-default.btn-round:focus, .btn-default.btn-round:hover, .btn-default.btn-round:active {
+.btn-default, .btn-default:focus, .btn-default:hover, .btn-default:active, .btn-default:active:focus, .btn-default:active:hover,
+.btn-default.btn-round:hover {
     color: white;
 }
 
@@ -23,6 +23,6 @@
 .btn-default {
     border-color: #03e4ac;
 }
-.btn-default:focus, .btn-default:hover, .btn-default:active {
+.btn-default:focus, .btn-default:hover, .btn-default:active, .btn-default:active:focus, .btn-default:active:hover {
     border-color: #10c89a;
 }

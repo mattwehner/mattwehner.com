@@ -1,12 +1,14 @@
 ﻿soundboxControllers.controller("root.controller", [
     "$scope",
+    "$state",
     function(
-        $scope) {
+        $scope,
+        $state) {
         $scope.model = {
 
         };
         $scope.search = function() {
-            alert($scope.model.search);
+            $state.go('about');
         };
     }
 ]);
