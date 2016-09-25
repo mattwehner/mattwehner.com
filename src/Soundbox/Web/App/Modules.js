@@ -5,17 +5,20 @@
 ]);
 
 var soundboxControllers = angular.module("soundboxControllers", []);
-var soundboxServices = angular.module("soundboxServices", []);
+var soundboxServices = angular.module("soundboxServices", [
+    "ProfileData",
+    "JsonGeneratorService"
+]);
 var soundboxRouting = angular.module("soundboxRouting", [
     "ui.router"
 ]);
 
 soundboxApp.run([
-    '$rootScope',
-    '$state',
-    '$stateParams',
-    '$anchorScroll',
-    function ($rootScope, $state, $stateParams, $anchorScroll) {
+    "$rootScope",
+    "$state",
+    "$stateParams",
+    "$anchorScroll",
+    function($rootScope, $state, $stateParams, $anchorScroll) {
 
 
         // Add these from ui-router so we can access the state/stateParams from any scope

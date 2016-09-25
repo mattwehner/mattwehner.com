@@ -11,6 +11,7 @@
 h1, .h1, h2, .h2, h3, .h3 {
     font-family: 'Montserrat-Bold', Helvetica Neue, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    margin: 20px 0;
 }
 
 h4, .h4, h5, .h5, h6, .h6, .btn {
@@ -19,19 +20,31 @@ h4, .h4, h5, .h5, h6, .h6, .btn {
 }
 
 /* Background Colors */
-html body {
-    background-color: #F1F1F1;
+.dashboard-panel .panel-heading {
+    background-color: transparent;
+}
+.panel-heading, .campaign-panel, .character-panel {
+    background-color: white;
+}
+html, body {
+    background-color: #F7F8F9; 
+}
+.sidebar {
+    background-color: #EBEEEF;
+}
+.s {
+    background-color: #CBCED1;
 }
 .navbar-default, #secondary-nav {
-    background-image: none;
     background-color: #324359;
 }
 
 /* Font Colors */
-.navbar-default .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+.navbar-default .navbar-nav > li > a, .navbar-inverse .navbar-brand, .campaign-panel, .character-panel, .playlist-panel {
     color: white;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus,
+.panel-link:hover span {
     color: #03e4ac;
 }
 
@@ -42,10 +55,33 @@ html body {
 .btn-round {
     border: 2px solid;
 }
+.sidebar {
+    border-right: 1px solid;
+}
+.dashboard-panel {
+    border-bottom: 1px solid;
+}
+
+
+.dashboard-panel {
+    border-color: #EBEEEF;
+}
+.sidebar, .panel {
+    border-color: #CBCED1;
+}
+.panel-link:hover .panel {
+    border-color: #03e4ac
+}
+.panel-link:hover .panel {
+    box-shadow: 0px 0px 10px #03e4ac;
+}
 
 .navbar-inverse {
     -ms-border-radius: 0;
     border-radius: 0;
+}
+.panel {
+    border-radius: 9px;
 }
 .border-round, .form-control, .btn {
     border-radius: 25px;
@@ -78,4 +114,55 @@ html body {
 } 
 .btn-round {
     box-sizing: border-box;
+}
+
+/* Panels */
+a:hover.panel-link, a:focus.panel-link {
+    text-decoration: none;
+}
+.dashboard-panel {
+    margin-bottom: 15px;
+}
+.dashboard-panel .panel-heading {
+    padding-left: 0;
+    padding-right: 0;
+}
+.campaign-panel, .character-panel, .playlist-panel {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.campaign-panel h3 {
+    margin: 10px 0;
+}
+.character-panel, .playlist-panel {
+    text-align: center;
+}
+.character-panel img, .playlist-panel img {
+    width: 100%;
+}
+.character-panel h4, .playlist-panel h4 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.playlist-panel span {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 4em;
+}
+
+.campaign-panel {     
+    background-image: url("http://gilbertsollars.com/images/wallpapers/fantasy-forest-wallpaper/fantasy-forest-wallpaper-13.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("http://gilbertsollars.com/images/wallpapers/fantasy-forest-wallpaper/fantasy-forest-wallpaper-13.jpg");
+ }
+.character-panel {
+    background-image: url("http://www.joshuad.net/new-bard-handbook-files/imgs/header.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("http://www.joshuad.net/new-bard-handbook-files/imgs/header.jpg");
+}
+.playlist-panel {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/56/4d/64/564d64ea69bd0d52a7969171c4c3c69c.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://s-media-cache-ak0.pinimg.com/originals/56/4d/64/564d64ea69bd0d52a7969171c4c3c69c.jpg");
 }

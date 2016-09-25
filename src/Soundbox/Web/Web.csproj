@@ -122,6 +122,8 @@
   <ItemGroup>
     <Content Include="App\Modules.js" />
     <Content Include="App\Routing.js" />
+    <Content Include="App\Services\JsonGeneratorService.js" />
+    <Content Include="App\Services\ProfileData.js" />
     <Content Include="App\Services\ReferenceDataService.js" />
     <Content Include="Content\bootstrap\bootstrap-theme.css" />
     <Content Include="Content\bootstrap\bootstrap-theme.min.css" />
@@ -129,10 +131,12 @@
     <Content Include="Content\bootstrap\bootstrap.min.css" />
     <Content Include="Content\generalStyles.css" />
     <Content Include="Content\inputStyles.css" />
+    <Content Include="Content\shortcuts.css" />
     <Content Include="Content\site.css" />
     <Content Include="Content\angular-ui-bootstrap\ui-bootstrap-csp.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\forcePanelSize.png" />
     <Content Include="Scripts\angularjs\angular-animate.js" />
     <Content Include="Scripts\angularjs\angular-animate.min.js" />
     <Content Include="Scripts\angularjs\angular-aria.js" />

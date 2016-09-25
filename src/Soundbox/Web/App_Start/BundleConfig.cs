@@ -33,6 +33,7 @@ namespace Web.App_Start
                     "~/Content/bootstrap/bootstrap.css",
                     "~/Content/inputStyles.css",
                     "~/Content/generalStyles.css",
+                    "~/Content/shortcuts.css",
                     "~/Content/site.css"
                 ));
 
