@@ -122,9 +122,9 @@
   <ItemGroup>
     <Content Include="App\Modules.js" />
     <Content Include="App\Routing.js" />
-    <Content Include="App\Services\JsonGeneratorService.js" />
+    <Content Include="App\Services\ControllerRequestService.js" />
     <Content Include="App\Services\ProfileData.js" />
-    <Content Include="App\Services\ReferenceDataService.js" />
+    <Content Include="App\Services\UserAccountsService.js" />
     <Content Include="Content\bootstrap\bootstrap-theme.css" />
     <Content Include="Content\bootstrap\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap\bootstrap.css" />
@@ -196,6 +196,7 @@
     <Content Include="App\Controllers\root.controller.js" />
     <Content Include="Content\fonts\Montserrat-Bold.ttf" />
     <Content Include="Content\fonts\Montserrat-Regular.ttf" />
+    <None Include="Properties\PublishProfiles\mattwehner - Web Deploy.pubxml" />
     <None Include="Scripts\jquery\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery\jquery-1.9.1.min.js" />
@@ -958,11 +959,17 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DataContracts\Track.cs" />
+    <Compile Include="Services\DataContracts\Profile.cs" />
     <Compile Include="Services\MessageContracts\CreateTrack.cs" />
     <Compile Include="Services\MessageContracts\CreateTrackResponse.cs" />
+    <Compile Include="Services\MessageContracts\GetUserProfile.cs" />
+    <Compile Include="Services\MessageContracts\GetUserProfileResponse.cs" />
     <Compile Include="Services\MessageContracts\SearchTrack.cs" />
     <Compile Include="Services\MessageContracts\SearchTrackResponse.cs" />
     <Compile Include="Services\Tracks.cs" />
+    <Compile Include="Services\Users.cs" />
+    <Compile Include="Storage\IStore.cs" />
+    <Compile Include="Storage\ProfileStore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />

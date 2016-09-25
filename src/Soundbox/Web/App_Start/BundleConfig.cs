@@ -25,7 +25,8 @@ namespace Web.App_Start
                     "~/Scripts/angular-ui-bootstrap/ui-bootstrap.js",
                     "~/Scripts/angular-ui-bootstrap/ui-bootstrap-tpls.js",
                     "~/App/*.js",
-                    "~/App/Controllers/*.js"
+                    "~/App/Controllers/*.js",
+                    "~/App/Services/*.js"
                 ));
 
             bundles.Add(new StyleBundle("~/Content/css")

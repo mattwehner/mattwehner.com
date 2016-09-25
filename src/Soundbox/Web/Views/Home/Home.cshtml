@@ -5,15 +5,23 @@
                 <div class="panel-heading">
                     <h3>Campaigns</h3>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <a href="" title="Beast Attack" class="panel-link">
-                            <div class="panel campaign-panel">
+                <div class="row" ng-show="model.campaigns.length > 0">
+                    <div class="col-xs-12 col-sm-6" ng-repeat="campaign in model.campaigns">
+                        <a href="" title="{{campaign.name}}" class="panel-link">
+                            <div class="panel campaign-panel" ng-style="returnBackgroundImage(campaign.imageUrl)">
                                 <div class="panel-body">
-                                    <h3>Approaching Darkness</h3>
+                                    <h3>{{campaign.name}}</h3>
                                 </div>
                             </div>
                         </a>
+                    </div>
+                </div>
+                <div class="row" ng-show="model.campaigns == null || model.campaigns.length == 0">
+                    <div class="col-xs-12">
+                        <div class="well text-center">
+                            <p>You don't have any campaigns.</p>
+                            <button type="button" class="btn btn-default top-margin">Create Campaign</button>
+                        </div>
                     </div>
                 </div>
             </div>

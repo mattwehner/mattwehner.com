@@ -1,14 +1,28 @@
 ﻿soundboxControllers.controller("root.controller", [
     "$scope",
-    "$state",
+    "ControllerRequestService",
+    "UserAccountService",
     function(
         $scope,
-        $state) {
+        ControllerRequestService,
+        UserAccountService
+    ) {
         $scope.model = {
+            player: {}
+        };
 
+        $scope.getPlayer = function() {
+            ControllerRequestService.executePromise({
+                func: UserAccountService.getProfile,
+                id: {
+                    id: 'auserid'
+                },
+                onSuccess: function(value) {
+                },
+                onFailure: function() {
+                }
+            }, $scope.model, 'getUserProfile');
         };
-        $scope.search = function() {
-            $state.go('about');
-        };
+        $scope.getPlayer();
     }
 ]);

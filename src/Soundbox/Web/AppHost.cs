@@ -1,5 +1,8 @@
 ﻿using Funq;
 using ServiceStack;
+using Web.Services;
+using Web.Services.DataContracts;
+using Web.Storage;
 
 namespace Web
 {
@@ -12,6 +15,8 @@ namespace Web
         public override void Configure(Container container)
         {
             SetConfig(new HostConfig {HandlerFactoryPath = "api"});
+
+            container.RegisterAutoWiredAs<ProfileStore, IStore<Profile>>();
         }
     }
 }

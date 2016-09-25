@@ -64,7 +64,7 @@ html, body {
 
 
 .dashboard-panel {
-    border-color: #EBEEEF;
+    border-color: #E3E3E3;
 }
 .sidebar, .panel {
     border-color: #CBCED1;
@@ -154,7 +154,7 @@ a:hover.panel-link, a:focus.panel-link {
     font-size: 4em;
 }
 
-.campaign-panel {     
+.c {     
     background-image: url("http://gilbertsollars.com/images/wallpapers/fantasy-forest-wallpaper/fantasy-forest-wallpaper-13.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("http://gilbertsollars.com/images/wallpapers/fantasy-forest-wallpaper/fantasy-forest-wallpaper-13.jpg");
  }

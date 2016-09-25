@@ -1,16 +1,17 @@
-﻿var soundboxApp = angular.module("soundboxApp", [
-    "soundboxControllers",
-    "soundboxRouting",
-    "soundboxServices"
+﻿var soundboxControllers = angular.module("soundboxControllers", []);
+
+var soundboxServices = angular.module("soundboxServices", [
+'ngResource'
 ]);
 
-var soundboxControllers = angular.module("soundboxControllers", []);
-var soundboxServices = angular.module("soundboxServices", [
-    "ProfileData",
-    "JsonGeneratorService"
-]);
 var soundboxRouting = angular.module("soundboxRouting", [
     "ui.router"
+]);
+
+var soundboxApp = angular.module("soundboxApp", [
+    "soundboxServices",
+    "soundboxRouting",
+    "soundboxControllers"
 ]);
 
 soundboxApp.run([
