@@ -19,8 +19,9 @@
                 id: {
                     id: $scope.model.player.Id,
                 },
-                onSuccess: function(campaigns) {
-                    $scope.model.player.Campaigns = [campaigns];
+                onSuccess: function(campaign) {
+                    $scope.model.campaigns = ($scope.model.campaigns)?$scope.model.campaigns:[];
+                    $scope.model.campaigns.push(campaign);
                 },
                 onFailure: function() {},
             }, $scope.model, 'getCampaigns');
@@ -35,14 +36,18 @@
                 onSuccess: function (profile) {
                     $scope.model.player = profile.Profile;
                     $scope.getCampaignsForPlayer();
-                    //$scope.getCharactersForPlayer();
-                    //$scope.getPlaylistsForPlayer();
-                    //$scope.getSoundboardsForPlayer();
                 },
                 onFailure: function () {
                 }
             }, $scope.model, 'getUserProfile');
         };
         $scope.getPlayer();
+
+        $scope.returnBackgroundImage = function(imageUrl) {
+            var gradientValue = 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(';
+            return {
+                'background-image': gradientValue + imageUrl + ')',
+            }
+        }
     }
 ]);

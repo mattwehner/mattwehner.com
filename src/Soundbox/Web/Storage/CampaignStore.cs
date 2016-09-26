@@ -5,6 +5,8 @@ namespace Web.Storage
 {
     public class CampaignStore : IStore<Campaign>
     {
+        private static readonly List<string> Characters = new List<string> { "E7F61483", "9F508E6D", "C5476D07", "F2C665D4" };
+
         public Campaign Get(string id)
         {
             return new Campaign
@@ -15,7 +17,5 @@ namespace Web.Storage
                 Characters = Characters,
             };
         }
-
-        private static readonly List<string> Characters = new List<string> { "E7F61483", "9F508E6D", "C5476D07", "F2C665D4"};
     }
 }

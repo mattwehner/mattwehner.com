@@ -5,19 +5,19 @@
                 <div class="panel-heading">
                     <h3>Campaigns</h3>
                 </div>
-                <div class="row" ng-if="model.player.Campaigns.length > 0">
-                    <div class="col-xs-12 col-sm-6" ng-repeat="campaign in model.player.Campaigns">
-                        <a href="" title="{{campaign.name}}" class="panel-link">
+                <div class="row" ng-if="model.campaigns.length > 0">
+                    <div class="col-xs-12 col-sm-6" ng-repeat="campaign in model.campaigns">
+                        <a href="" title="{{campaign.Name}}" class="panel-link">
                             <div class="panel campaign-panel"
-                                 ng-class="{'loading':(model.busies.getUserProfile)}">
+                                 ng-style="returnBackgroundImage(campaign.Image)">
                                 <div class="panel-body">
-                                    <h3>{{campaign.name}}</h3>
+                                    <h3>{{campaign.Name}}</h3>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="row" ng-show="model.player.Campaigns == null || model.player.Campaigns.length == 0">
+                <div class="row" ng-show="model.campaigns == null || model.campaigns.length == 0">
                     <div class="col-xs-12">
                         <div class="well text-center">
                             <p>You don't have any campaigns.</p>
