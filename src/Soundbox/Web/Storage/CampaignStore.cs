@@ -3,20 +3,19 @@ using Web.Services.DataContracts;
 
 namespace Web.Storage
 {
-    public class ProfileStore : IStore<Profile>
+    public class CampaignStore : IStore<Campaign>
     {
-        public Profile Get(string id)
+        public Campaign Get(string id)
         {
-            return new Profile
+            return new Campaign
             {
                 Id = "030E7D50",
-                Username = "Dungeon Master",
-                Campaigns = Campaigns,
+                Name = "Approaching Darkness",
+                Image = "http://gilbertsollars.com/images/wallpapers/fantasy-forest-wallpaper/fantasy-forest-wallpaper-13.jpg",
                 Characters = Characters,
             };
         }
 
-        private static readonly List<string> Campaigns = new List<string> {"2EA6C9C5"};
         private static readonly List<string> Characters = new List<string> { "E7F61483", "9F508E6D", "C5476D07", "F2C665D4"};
     }
 }

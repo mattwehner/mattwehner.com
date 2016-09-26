@@ -124,6 +124,7 @@
     <Content Include="App\Routing.js" />
     <Content Include="App\Services\ControllerRequestService.js" />
     <Content Include="App\Services\ProfileData.js" />
+    <Content Include="App\Services\CampaignsService.js" />
     <Content Include="App\Services\UserAccountsService.js" />
     <Content Include="Content\bootstrap\bootstrap-theme.css" />
     <Content Include="Content\bootstrap\bootstrap-theme.min.css" />
@@ -136,6 +137,7 @@
     <Content Include="Content\angular-ui-bootstrap\ui-bootstrap-csp.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\favicon.png" />
     <Content Include="Images\forcePanelSize.png" />
     <Content Include="Scripts\angularjs\angular-animate.js" />
     <Content Include="Scripts\angularjs\angular-animate.min.js" />
@@ -958,17 +960,26 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DataContracts\Campaign.cs" />
+    <Compile Include="Services\DataContracts\Character.cs" />
+    <Compile Include="Services\DataContracts\ITrackCollection.cs" />
+    <Compile Include="Services\DataContracts\Playlist.cs" />
+    <Compile Include="Services\DataContracts\Soundboard.cs" />
     <Compile Include="Services\DataContracts\Track.cs" />
     <Compile Include="Services\DataContracts\Profile.cs" />
     <Compile Include="Services\MessageContracts\CreateTrack.cs" />
     <Compile Include="Services\MessageContracts\CreateTrackResponse.cs" />
+    <Compile Include="Services\MessageContracts\GetCampaign.cs" />
+    <Compile Include="Services\MessageContracts\GetCampaignResponse.cs" />
     <Compile Include="Services\MessageContracts\GetUserProfile.cs" />
     <Compile Include="Services\MessageContracts\GetUserProfileResponse.cs" />
     <Compile Include="Services\MessageContracts\SearchTrack.cs" />
     <Compile Include="Services\MessageContracts\SearchTrackResponse.cs" />
     <Compile Include="Services\Tracks.cs" />
+    <Compile Include="Services\Campaigns.cs" />
     <Compile Include="Services\Users.cs" />
     <Compile Include="Storage\IStore.cs" />
+    <Compile Include="Storage\CampaignStore.cs" />
     <Compile Include="Storage\ProfileStore.cs" />
   </ItemGroup>
   <ItemGroup>

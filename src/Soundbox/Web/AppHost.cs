@@ -17,6 +17,7 @@ namespace Web
             SetConfig(new HostConfig {HandlerFactoryPath = "api"});
 
             container.RegisterAutoWiredAs<ProfileStore, IStore<Profile>>();
+            container.RegisterAutoWiredAs<CampaignStore, IStore<Campaign>>();
         }
     }
 }
