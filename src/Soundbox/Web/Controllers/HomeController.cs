@@ -21,5 +21,11 @@ namespace Web.Controllers
         {
             return PartialView();
         }
+
+        [AllowAnonymous]
+        public ActionResult Campaign()
+        {
+            return PartialView();
+        }
     }
 }

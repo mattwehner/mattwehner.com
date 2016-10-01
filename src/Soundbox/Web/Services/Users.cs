@@ -7,11 +7,11 @@ namespace Web.Services
 {
     public class Users : Service
     {
-        public IStore<Profile> Store { get; set; }
+        public ISoundboxStore Store { get; set; }
 
         public GetUserProfileResponse Get(GetUserProfile request)
         {
-            var profile = Store.Get(request.Id);
+            var profile = Store.Profiles.Get(request.Id);
 
             return new GetUserProfileResponse
             {

@@ -120,6 +120,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Controllers\campaign.controller.js" />
+    <Content Include="App\Controllers\dashboard.controller.js" />
     <Content Include="App\Modules.js" />
     <Content Include="App\Routing.js" />
     <Content Include="App\Services\ControllerRequestService.js" />
@@ -967,8 +969,11 @@
     <Compile Include="Services\DataContracts\Soundboard.cs" />
     <Compile Include="Services\DataContracts\Track.cs" />
     <Compile Include="Services\DataContracts\Profile.cs" />
+    <Compile Include="Services\MessageContracts\ListForCallerCampaignsResponse.cs" />
+    <Compile Include="Storage\ICampaignsStore.cs" />
     <Compile Include="Services\MessageContracts\CreateTrack.cs" />
     <Compile Include="Services\MessageContracts\CreateTrackResponse.cs" />
+    <Compile Include="Services\MessageContracts\GetListForCallerCampaigns.cs" />
     <Compile Include="Services\MessageContracts\GetCampaign.cs" />
     <Compile Include="Services\MessageContracts\GetCampaignResponse.cs" />
     <Compile Include="Services\MessageContracts\GetUserProfile.cs" />
@@ -978,9 +983,12 @@
     <Compile Include="Services\Tracks.cs" />
     <Compile Include="Services\Campaigns.cs" />
     <Compile Include="Services\Users.cs" />
+    <Compile Include="Storage\IProfileStore.cs" />
+    <Compile Include="Storage\ISoundboxStore.cs" />
     <Compile Include="Storage\IStore.cs" />
     <Compile Include="Storage\CampaignStore.cs" />
     <Compile Include="Storage\ProfileStore.cs" />
+    <Compile Include="Storage\SoundboxStore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -990,6 +998,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Campaign.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

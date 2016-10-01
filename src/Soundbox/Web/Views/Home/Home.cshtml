@@ -1,4 +1,4 @@
-﻿<div class="fixed-content">
+﻿<div class="fixed-content" ng-controller="dashboard.controller">
     <div class="row">
         <div class="col-xs-12">
             <div class="dashboard-panel">
@@ -7,7 +7,7 @@
                 </div>
                 <div class="row" ng-if="model.campaigns.length > 0">
                     <div class="col-xs-12 col-sm-6" ng-repeat="campaign in model.campaigns">
-                        <a href="" title="{{campaign.Name}}" class="panel-link">
+                        <a href="" title="{{campaign.Name}}" class="panel-link" ui-sref="campaigns.campaign({campaignId: campaign.Id})">
                             <div class="panel campaign-panel"
                                  ng-style="returnBackgroundImage(campaign.Image)">
                                 <div class="panel-body">

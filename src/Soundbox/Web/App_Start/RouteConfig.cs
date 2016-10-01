@@ -10,6 +10,7 @@ namespace Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.IgnoreRoute("api/{*pathInfo}");
 
+            //Angular Route handled urls
             routes.MapRoute("Home", "Partials/Home/Home", new
                       {
                           controller = "Home",
@@ -21,12 +22,32 @@ namespace Web
                           controller = "Home",
                           action = "About",
                       });
+
+            routes.MapRoute("Campaign", "Partials/Home/Campaign", new
+                      {
+                          controller = "Home",
+                          action = "Campaign",
+                      });
+
+
+
+
+            //User Entered Urls
             routes.MapRoute("Home/About", "About", new
             {
                 controller = "Home",
                 action = "Index",
             });
+            
+            routes.MapRoute("Campaigns/Campaign", "Campaign/{campaignId}", new
+            {
+                controller = "Home",
+                action = "Index",
+                campaignId = UrlParameter.Optional,
+            });
 
+
+            //Default
             routes.MapRoute("Default", "{controller}/{action}/{id}", new
             {
                 controller = "Home",

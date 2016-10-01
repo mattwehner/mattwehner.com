@@ -1,7 +1,7 @@
 ﻿soundboxRouting.config([
-    "$stateProvider",
-    "$urlRouterProvider",
-    "$locationProvider",
+    '$stateProvider',
+    '$urlRouterProvider',
+    '$locationProvider',
     function(
         $stateProvider,
         $urlRouterProvider,
@@ -12,7 +12,7 @@
             requireBase: false
         });
 
-        $urlRouterProvider.otherwise("/");
+        $urlRouterProvider.otherwise('/');
 
         $stateProvider
             .state('root', {
@@ -34,6 +34,19 @@
                 templateUrl: '/Partials/Home/About',
                 data: {
                     title: 'About'
+                },
+            })
+            .state('campaigns', {
+                parent: 'root',
+                "abstract": true,
+                url: '/campaign',
+                template: '<ui-view/>',
+            })
+            .state('campaigns.campaign', {
+                url: '/:campaignId',
+                templateUrl: '/Partials/Home/Campaign',
+                data: {
+                    title: 'View Campaign'
                 },
             });
     }

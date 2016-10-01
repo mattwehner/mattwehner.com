@@ -3,7 +3,7 @@ using Web.Services.DataContracts;
 
 namespace Web.Storage
 {
-    public class ProfileStore : IStore<Profile>
+    public class ProfileStore : IProfileStore
     {
         public Profile Get(string id)
         {

@@ -21,8 +21,16 @@
         }
 
         return $resource('/api/campaigns/:id', { id: '@id' }, {
+            query: {
+                method: 'GET',
+                isArray: true,
+                transformResponse: function (data) {
+                    return unWrapResponse(data, 'Campaigns', true);
+                },
+            },
             get: {
                 method: 'GET',
+                isArray: false,
                 transformResponse: function (data) {
                     return unWrapResponse(data, 'Campaign', false);
                 },
