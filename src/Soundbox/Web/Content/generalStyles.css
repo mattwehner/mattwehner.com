@@ -8,7 +8,14 @@
     src: url('fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
-h1, .h1, h2, .h2, h3, .h3 {
+@font-face {
+    font-family: 'ABeeZee-Regular';
+    src: url('fonts/abeezee-regular.ttf') format('truetype');
+}
+html, body {
+    font-family: 'ABeeZee-Regular', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+h1, .h1, h2, .h2, h3, .h3, .sidebar h4 {
     font-family: 'Montserrat-Bold', Helvetica Neue, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     margin: 20px 0;
@@ -40,11 +47,18 @@ html, body {
 }
 
 /* Font Colors */
+html, body {
+    color: #232C33;
+}
 .navbar-default .navbar-nav > li > a, .navbar-inverse .navbar-brand, .campaign-panel, .character-panel, .playlist-panel {
     color: white;
 }
+.sidebar-content li a {
+    color: #626970;
+}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus,
-.panel-link:hover span {
+.panel-link:hover span,
+.sidebar-content li a:hover, .sidebar-content li a:focus, .sidebar-content .sidebar-active {
     color: #03e4ac;
 }
 
@@ -98,6 +112,7 @@ html, body {
 }
 .navbar-toggle {
     display: inline-block;
+    margin-right: 0;
 }
 .navbar-search .input-group {
     margin-top: 8px;
@@ -106,6 +121,45 @@ html, body {
 .navbar-search .btn-round {
     margin-top: 7px;
     margin-bottom: 7px;
+}
+@media (max-width: 430px) {
+    .navbar-search .navbar-toggle {
+        float: none;
+    }
+    .navbar-search .col-xs-8 {
+        padding: 0 10px;
+    }
+    .navbar-search .col-xs-2:first-child {
+        padding: 0;
+    }
+    .navbar-search .col-xs-2 button {
+        float: right;
+    }
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar h4 {
+    margin-bottom: 10px;
+}
+.sidebar li {
+    padding: 2px 0;
+}
+.sidebar li a {
+    text-decoration: none;
+}
+.sidebar-content li a:hover:after, .sidebar-content li a:focus:after, .sidebar-active:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e080";
+    float: right;
 }
 
 /* Forms And Buttons */
@@ -152,17 +206,4 @@ a:hover.panel-link, a:focus.panel-link {
     top: 50%;
     transform: translate(-50%, -60%);
     font-size: 4em;
-}
-
-.c {     
-    background-image: url("http://gilbertsollars.com/images/wallpapers/fantasy-forest-wallpaper/fantasy-forest-wallpaper-13.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("http://gilbertsollars.com/images/wallpapers/fantasy-forest-wallpaper/fantasy-forest-wallpaper-13.jpg");
- }
-.character-panel {
-    background-image: url("http://www.joshuad.net/new-bard-handbook-files/imgs/header.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("http://www.joshuad.net/new-bard-handbook-files/imgs/header.jpg");
-}
-.playlist-panel {
-    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/56/4d/64/564d64ea69bd0d52a7969171c4c3c69c.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://s-media-cache-ak0.pinimg.com/originals/56/4d/64/564d64ea69bd0d52a7969171c4c3c69c.jpg");
 }

@@ -1,18 +1,21 @@
-﻿<div ng-controller="campaign.controller">
-    <div class="row">
-        <div class="col-xs-3 hidden-xs hidden-sm no-right-padding sidebar">
-            <div class="sidebar-content">
-                <h4>Campaign</h4>
+﻿<div class="row" ng-controller="campaign.controller">
+    <div class="col-xs-3 hidden-xs hidden-sm no-right-padding sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-section">
+                <h4>Characters</h4>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="" ui-sref="campaigns.characters">Characters</a></li>
-                    <li><a href="" ui-sref="campaigns.playlists">Playlists</a></li>
-                    <li><a href="" ui-sref="campaigns.soundboards">Soundboards</a></li>
+                    <li ng-repeat="character in model.campaign.Characters">
+                        <a href="" ui-sref="campaigns.campaign.character({characterId: character.Id})" title="{{character.Name}}"
+                           ng-click="model.pageElements.selectedTab = character.Id"
+                           ng-class="{'sidebar-active': model.pageElements.selectedTab == character.Id}">
+                            {{character.Name}}
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="col-xs-12 col-md-9">
-            <h2>{{model.campaign.Name}}</h2>
-        </div>
+    </div>
+    <div class="col-xs-12 col-md-9">
+        <ui-view/>
     </div>
 </div>

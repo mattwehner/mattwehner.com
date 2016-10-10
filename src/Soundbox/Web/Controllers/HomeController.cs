@@ -27,5 +27,17 @@ namespace Web.Controllers
         {
             return PartialView();
         }
+
+        [AllowAnonymous]
+        public ActionResult CampaignHome()
+        {
+            return PartialView();
+        }
+
+        [AllowAnonymous]
+        public ActionResult Character()
+        {
+            return PartialView();
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿soundboxControllers.controller('campaign.controller', [
+﻿soundboxControllers.controller('campaign.controller',
+[
     '$scope',
     'ControllerRequestService',
     'CampaignsService',
@@ -8,20 +9,26 @@
         CampaignsService
     ) {
         $scope.model = {
-            campaign: {}
+            campaign: {},
+            tabSections: {},
+            pageElements: {
+                selectedTab: $scope.$stateParams.characterId,
+            }
         };
 
         $scope.getCampaign = function() {
             ControllerRequestService.executePromise({
-                func: CampaignsService.get,
-                id: {
-                    id: $scope.$stateParams.campaignId,
+                    func: CampaignsService.get,
+                    id: {
+                        id: $scope.$stateParams.campaignId,
+                    },
+                    onSuccess: function(campaign) {
+                        $scope.model.campaign = campaign;
+                    },
+                    onFailure: function() {},
                 },
-                onSuccess: function(campaign) {
-                    $scope.model.campaign = campaign;
-                },
-                onFailure: function() {},
-            }, $scope.model, 'getCampaign');
+                $scope.model,
+                'getCampaign');
         };
         $scope.getCampaign();
     }

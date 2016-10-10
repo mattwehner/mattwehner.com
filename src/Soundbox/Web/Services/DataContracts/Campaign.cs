@@ -8,8 +8,8 @@ namespace Web.Services.DataContracts
         public string Name { get; set; }
         public string Image { get; set; }
 
-        public List<string> Characters { get; set; }
-        public List<string> Playlists { get; set; }
-        public List<string> Soundboards { get; set; }
+        public List<Character> Characters { get; set; }
+        public List<Playlist> Playlists { get; set; }
+        public List<Soundboard> Soundboards { get; set; }
     }
 }

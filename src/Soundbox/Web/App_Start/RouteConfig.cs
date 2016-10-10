@@ -29,17 +29,43 @@ namespace Web
                           action = "Campaign",
                       });
 
+            routes.MapRoute("CampaignHome", "Partials/Home/CampaignHome", new
+                      {
+                          controller = "Home",
+                          action = "CampaignHome",
+                      });
+
+            routes.MapRoute("Character", "Partials/Home/Character", new
+                      {
+                          controller = "Home",
+                          action = "Character",
+                      });
+
 
 
 
             //User Entered Urls
-            routes.MapRoute("Home/About", "About", new
+            routes.MapRoute("Home.About", "About", new
             {
                 controller = "Home",
                 action = "Index",
             });
             
-            routes.MapRoute("Campaigns/Campaign", "Campaign/{campaignId}", new
+            routes.MapRoute("Campaigns.Campaign", "Campaign/{campaignId}", new
+            {
+                controller = "Home",
+                action = "Index",
+                campaignId = UrlParameter.Optional,
+            });
+
+            routes.MapRoute("Campaigns.Campaign.Home", "Campaign/{campaignId}/Home", new
+            {
+                controller = "Home",
+                action = "Index",
+                campaignId = UrlParameter.Optional,
+            });
+
+            routes.MapRoute("Campaigns.Campaign.Character", "Campaign/{campaignId}/Character/{characterId}", new
             {
                 controller = "Home",
                 action = "Index",

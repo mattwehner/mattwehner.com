@@ -122,8 +122,14 @@
   <ItemGroup>
     <Content Include="App\Controllers\campaign.controller.js" />
     <Content Include="App\Controllers\dashboard.controller.js" />
+    <Content Include="App\Directives\SidebarSectionDirective.html" />
+    <Content Include="App\Directives\SidebarDirective.html" />
+    <Content Include="App\Directives\SidebarDirective.js" />
     <Content Include="App\Modules.js" />
     <Content Include="App\Routing.js" />
+    <Content Include="App\Services\SoundboardsService.js" />
+    <Content Include="App\Services\PlaylistsService.js" />
+    <Content Include="App\Services\CharactersService.js" />
     <Content Include="App\Services\ControllerRequestService.js" />
     <Content Include="App\Services\ProfileData.js" />
     <Content Include="App\Services\CampaignsService.js" />
@@ -200,6 +206,7 @@
     <Content Include="App\Controllers\root.controller.js" />
     <Content Include="Content\fonts\Montserrat-Bold.ttf" />
     <Content Include="Content\fonts\Montserrat-Regular.ttf" />
+    <Content Include="Content\fonts\abeezee-regular.ttf" />
     <None Include="Properties\PublishProfiles\mattwehner - Web Deploy.pubxml" />
     <None Include="Scripts\jquery\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery\jquery-1.9.1.js" />
@@ -989,6 +996,7 @@
     <Compile Include="Storage\CampaignStore.cs" />
     <Compile Include="Storage\ProfileStore.cs" />
     <Compile Include="Storage\SoundboxStore.cs" />
+    <Compile Include="Storage\TestData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -999,6 +1007,8 @@
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Campaign.cshtml" />
+    <Content Include="Views\Home\CampaignHome.cshtml" />
+    <Content Include="Views\Home\Character.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

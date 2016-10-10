@@ -20,7 +20,7 @@
                 <div class="row" ng-show="model.campaigns == null || model.campaigns.length == 0">
                     <div class="col-xs-12">
                         <div class="well text-center">
-                            <p>You don't have any campaigns.</p>
+                            <p>You don't have any campaigns yet.</p>
                             <button type="button" class="btn btn-default top-margin">Create a Campaign</button>
                         </div>
                     </div>
@@ -30,14 +30,24 @@
                 <div class="panel-heading">
                     <h3>Characters</h3>
                 </div>
-                <div class="row">
-                    <div class="col-xs-6 col-sm-3">
-                        <a href="" title="Beast Attack" class="panel-link">
-                            <div class="panel character-panel">
-                                <img src="/Images/forcePanelSize.png"/>
-                                <h4>Tian A'Alor</h4>
+                <div class="row" ng-if="model.characters.length > 0">
+                    <div class="col-xs-12 col-sm-6" ng-repeat="character in model.characters">
+                        <a href="" title="{{character.Name}}" class="panel-link" ui-sref="characters.character({characterId: character.Id})">
+                            <div class="panel character-panel"
+                                 ng-style="returnBackgroundImage(character.Image)">
+                                <div class="panel-body">
+                                    <h4>{{character.Name}}</h4>
+                                </div>
                             </div>
                         </a>
+                    </div>
+                </div>
+                <div class="row" ng-show="model.characters == null || model.characters.length == 0">
+                    <div class="col-xs-12">
+                        <div class="well text-center">
+                            <p>You don't have any characters yet.</p>
+                            <button type="button" class="btn btn-default top-margin">Create a character</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,22 +55,22 @@
                 <div class="panel-heading">
                     <h3>Playlists</h3>
                 </div>
-                <div class="row">
-                    <div class="col-xs-6 col-sm-3">
-                        <a href="" title="Beast Attack" class="panel-link">
-                            <div class="panel playlist-panel">
-                                <img src="/Images/forcePanelSize.png"/>
-                                <span class="glyphicon glyphicon-play-circle"></span>
-                                <h4>Beast Attack</h4>
-                            </div>
-                        </a>
+                <div class="row" ng-show="model.playlists == null || model.playlists.length == 0">
+                    <div class="col-xs-12">
+                        <div class="well text-center">
+                            <p>You don't have any playlists yet.</p>
+                            <button type="button" class="btn btn-default top-margin">Create a playlist</button>
+                        </div>
                     </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <a href="" title="Ambient Forest" class="panel-link">
-                            <div class="panel playlist-panel">
-                                <img src="/Images/forcePanelSize.png"/>
+                </div>
+                <div class="row" ng-if="model.playlists.length > 0">
+                    <div class="col-xs-6 col-sm-3" ng-repeat="playlist in model.playlists">
+                        <a href="" title="{{playlist.Name}}" class="panel-link" ui-sref="playlists.playlist({playlistId: playlist.Id})">
+                            <div class="panel playlist-panel"
+                                 ng-style="returnBackgroundImage(playlist.Image)">
+                                <img src="/Images/forcePanelSize.png" />
                                 <span class="glyphicon glyphicon-play-circle"></span>
-                                <h4>Ambient Forest</h4>
+                                <h4>{{playlist.Name}}</h4>
                             </div>
                         </a>
                     </div>

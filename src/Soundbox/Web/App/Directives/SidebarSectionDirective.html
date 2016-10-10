@@ -1,0 +1,12 @@
+﻿<div class="sidebar-section">
+    <h4>{{section.name}}</h4>
+    <ul>
+        <li ng-repeat="item in items">
+            <a href="" ui-sref="{{item.state}}" title="{{item.title}}"
+               ng-click="model.pageElements.selectedTab = title.id"
+               ng-class="{'sidebar-active': model.pageElements.selectedTab == title.id}">
+                {{item.title}}
+            </a>
+        </li>
+    </ul>
+</div>

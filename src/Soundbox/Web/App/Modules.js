@@ -1,24 +1,30 @@
-﻿var soundboxControllers = angular.module("soundboxControllers", []);
+﻿var soundboxControllers = angular.module('soundboxControllers', []);
 
-var soundboxServices = angular.module("soundboxServices", [
-'ngResource'
+var soundboxServices = angular.module('soundboxServices',
+[
+    'ngResource'
 ]);
 
-var soundboxRouting = angular.module("soundboxRouting", [
-    "ui.router"
+var soundboxRouting = angular.module('soundboxRouting',
+[
+    'ui.router'
 ]);
 
-var soundboxApp = angular.module("soundboxApp", [
-    "soundboxServices",
-    "soundboxRouting",
-    "soundboxControllers"
+var soundboxDirectives = angular.module('soundboxDirectives', []);
+
+var soundboxApp = angular.module('soundboxApp',
+[
+    'soundboxServices',
+    'soundboxDirectives',
+    'soundboxRouting',
+    'soundboxControllers'
 ]);
 
 soundboxApp.run([
-    "$rootScope",
-    "$state",
-    "$stateParams",
-    "$anchorScroll",
+    '$rootScope',
+    '$state',
+    '$stateParams',
+    '$anchorScroll',
     function($rootScope, $state, $stateParams, $anchorScroll) {
 
 

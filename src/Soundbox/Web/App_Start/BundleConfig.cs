@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace Web.App_Start
+namespace Web
 {
     public class BundleConfig
     {
@@ -26,7 +26,8 @@ namespace Web.App_Start
                     "~/Scripts/angular-ui-bootstrap/ui-bootstrap-tpls.js",
                     "~/App/*.js",
                     "~/App/Controllers/*.js",
-                    "~/App/Services/*.js"
+                    "~/App/Services/*.js",
+                    "~/App/Directives/*.js"
                 ));
 
             bundles.Add(new StyleBundle("~/Content/css")
