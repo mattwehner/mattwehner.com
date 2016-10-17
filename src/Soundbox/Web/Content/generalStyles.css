@@ -1,18 +1,4 @@
-﻿@font-face {
-    font-family: 'Montserrat-Regular';
-    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'ABeeZee-Regular';
-    src: url('fonts/abeezee-regular.ttf') format('truetype');
-}
-html, body {
+﻿html, body {
     font-family: 'ABeeZee-Regular', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 h1, .h1, h2, .h2, h3, .h3, .sidebar h4 {
