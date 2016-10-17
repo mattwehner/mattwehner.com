@@ -1,0 +1,152 @@
+﻿@import (reference) "../bootstrap/bootstrap.less";
+@import (reference) "networkStyles.less";
+@import (reference) "shortcuts.less";
+
+/* Local Variables */
+@white: #fff;
+.glyph {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+body {
+    font-family: @body;
+    color:@textColor;
+    min-width: 320px;
+    padding-top:@xlargeSpacing;
+    background-color: @backgroundColor; 
+}
+.fixed-content {
+    margin: auto;
+}
+@media(min-width: 768px) {
+    .fixed-content {
+        width: 750px;
+    }
+}
+@media(min-width: 992px) {
+    .fixed-content {
+        width: 970px;
+    }
+}
+@media(min-width: 1200px) {
+    .fixed-content {
+        width: 1170px;
+    }
+}
+
+/* Type */
+h1, .h1, h2, .h2, h3, .h3, .sidebar h4 {
+    font-family: @headers;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+h4, .h4, h5, .h5, h6, .h6, .btn {
+    font-family: @headers;
+    text-transform: uppercase;
+}
+a {
+    color: @linkColor;
+    text-decoration:none;
+}
+a:hover, a:focus, a:active {
+    color: darken(@primaryColor, 10%);
+    text-decoration:none;
+}
+
+/* Navigation */
+.navbar-default {
+    padding-top: @smallSpacing;
+    padding-bottom: @smallSpacing;
+    background-color: @navbarBackground;
+}
+.navbar-default .navbar-nav > li > a {
+    color:@white;
+}
+.navbar-inverse .navbar-brand {
+    color:@white;
+}
+.navbar-toggle {
+    display: inline-block;
+    margin-right: 0;
+}
+.navbar-search .input-group {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.navbar-search .btn-round {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+@media (max-width: 430px) {
+    .navbar-search .navbar-toggle {
+        float: none;
+    }
+    .navbar-search .col-xs-8 {
+        padding: 0 @mediumSpacing;
+    }
+    .navbar-search .col-xs-2:first-child {
+        padding: 0;
+    }
+    .navbar-search .col-xs-2 button {
+        float: right;
+    }
+}
+#secondary-nav {
+  background-color: @navbarBackground;  
+}
+
+.sidebar {
+    position: relative;
+    height: 100vh;
+    margin-bottom: -@xlargeSpacing;
+    overflow-y: auto; 
+    background-color: @lightColor;
+}
+.sidebar-content, .sidebar-page {
+    padding-left: @defaultSpacing;
+    padding-right: @defaultSpacing;
+}
+.sidebar-content {
+    width: 100%;
+    max-width: 250px;
+    float: right;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar h4 {
+    margin-bottom: @mediumSpacing;
+}
+.sidebar li {
+    padding: 2px 0;
+}
+.sidebar li a {
+    text-decoration: none;
+}
+.sidebar-content li a:hover:after, .sidebar-content li a:focus:after, .sidebar-active:after {
+    .glyph;
+    content: "\e080";
+    float: right;
+}
+
+/* Panels */
+.panel-heading {
+    background-color: @white;
+}
+.campaign-panel {
+    background-color: @white;
+}
+.character-panel {
+    background-color: @white;
+}

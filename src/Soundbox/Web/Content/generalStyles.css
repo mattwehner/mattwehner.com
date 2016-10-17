@@ -16,27 +16,9 @@ h4, .h4, h5, .h5, h6, .h6, .btn {
 .dashboard-panel .panel-heading {
     background-color: transparent;
 }
-.panel-heading, .campaign-panel, .character-panel {
-    background-color: white;
-}
-html, body {
-    background-color: #F7F8F9; 
-}
-.sidebar {
-    background-color: #EBEEEF;
-}
-.s {
-    background-color: #CBCED1;
-}
-.navbar-default, #secondary-nav {
-    background-color: #324359;
-}
 
 /* Font Colors */
-html, body {
-    color: #232C33;
-}
-.navbar-default .navbar-nav > li > a, .navbar-inverse .navbar-brand, .campaign-panel, .character-panel, .playlist-panel {
+.campaign-panel, .character-panel, .playlist-panel {
     color: white;
 }
 .sidebar-content li a {
