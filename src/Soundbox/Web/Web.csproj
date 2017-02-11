@@ -137,9 +137,6 @@
     <Content Include="Content\bootstrap\bootstrap.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\angular-ui-bootstrap\ui-bootstrap-csp.css" />
-    <Content Include="Content\generalStyles.css" />
-    <Content Include="Content\inputStyles.css" />
-    <Content Include="Content\shortcuts.css" />
     <Content Include="Content\theme\styles.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\favicon.png" />
