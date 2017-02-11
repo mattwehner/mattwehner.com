@@ -1,3 +1,35 @@
 ﻿@import "networkStyles.less";
 @import "generalStyles.less";
 @import "shortcuts.less";
+
+/* Currently Playing */
+.currentPlaylistContainer{
+    position:fixed;
+    bottom:0;
+    left: 0;
+    right:0;
+    z-index:1;
+    background-color:@backgroundColor;
+    height:auto;
+    border-top: @mediumBorder solid;
+    border-color: darken(@lightColor, 10%);
+    padding: @mediumSpacing @defaultSpacing;
+}
+.currentPlaylistContainer > .fixed-content > .btn {
+    border-color: darken(@lightColor, 10%);
+    background-color: @backgroundColor;
+    float:left;
+    margin-top: -30px;
+}
+.currentPlaylistContainer > .fixed-content > .row {
+    padding-left: 60px;
+}
+
+.currentPlaylist p {
+    margin: 0;
+}
+.currentPlaylistbtn {
+    border: none;
+    background: none;
+    margin: 0 @smallSpacing;
+}

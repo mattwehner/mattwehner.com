@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="col-xs-2">
-                    <button class="btn btn-default btn-round glyphicon glyphicon-plus"></button>
+                    <button type="button" class="btn btn-default btn-round glyphicon glyphicon-plus"></button>
                 </div>
             </div>
         </div>
@@ -44,6 +44,42 @@
 </header>
 <div class="container-fluid">
     @RenderBody()
+</div>
+<div class="currentPlaylistContainer">
+    <div class="fixed-content">
+        <button type="button" class="btn btn-round" ng-click="model.pageElements.currentlyPlayingExpanded = !model.pageElements.currentlyPlayingExpanded">
+            <i class="fa " aria-hidden="true"
+               ng-class="{'fa-chevron-up': !model.pageElements.currentlyPlayingExpanded, 'fa-chevron-down': model.pageElements.currentlyPlayingExpanded}"></i>
+        </button>
+        <div class="row">
+            <div class="col-xs-12 currentPlaylist">
+                <div class="row">
+                    <div class="col-xs-6 col-md-2">
+                        <div class="currentPlaylistControls">
+                            <button type="button" class="currentPlaylistbtn">
+                                <i class="fa fa-backward" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="currentPlaylistbtn"
+                                    ng-if="!model.isPlaying"
+                                    ng-click="model.isPlaying = true">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="currentPlaylistbtn"
+                                    ng-if="model.isPlaying"
+                                    ng-click="model.isPlaying = false">
+                                <i class="fa fa-pause" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="currentPlaylistbtn">
+                                <i class="fa fa-forward" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-push-8 col-md-2 text-right">10:00 / 10:00</div>
+                    <div class="col-xs-12 col-md-pull-2 col-md-8">Track Name</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 @Scripts.Render("~/Scripts/core")

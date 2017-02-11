@@ -33,6 +33,7 @@ namespace Web
             bundles.Add(new StyleBundle("~/Content/css")
                 .Include(
                     "~/Content/bootstrap/bootstrap.css",
+                    "~/Content/font-awesome/font-awesome.css",
                     "~/Content/theme/styles.css"
                 ));
 

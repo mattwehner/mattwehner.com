@@ -3,5 +3,10 @@
     function(
         $scope
     ) {
+        $scope.model = {
+            pageElements: {
+                currentlyPlayingExpanded: false,
+            }
+        };
     }
 ]);

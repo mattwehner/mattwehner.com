@@ -120,6 +120,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Controllers\currentlyPlaying.controller.js" />
     <Content Include="App\Controllers\campaign.controller.js" />
     <Content Include="App\Controllers\dashboard.controller.js" />
     <Content Include="App\Directives\SidebarSectionDirective.html" />
@@ -135,8 +136,13 @@
     <Content Include="App\Services\CampaignsService.js" />
     <Content Include="App\Services\UserAccountsService.js" />
     <Content Include="Content\bootstrap\bootstrap.css" />
+    <Content Include="Content\font-awesome\font-awesome.css" />
+    <Content Include="Content\font-awesome\font-awesome.min.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\angular-ui-bootstrap\ui-bootstrap-csp.css" />
+    <Content Include="Content\theme\generalStyles.css" />
+    <Content Include="Content\theme\networkStyles.css" />
     <Content Include="Content\theme\styles.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\favicon.png" />
@@ -270,6 +276,11 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\theme\generalStyles.less" />
     <Content Include="Content\theme\shortcuts.less" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\mattwehner - Web Deploy.pubxml" />
     <None Include="Scripts\jquery\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap\bootstrap.js" />
