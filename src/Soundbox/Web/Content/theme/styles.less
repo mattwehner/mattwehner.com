@@ -8,12 +8,14 @@
     bottom:0;
     left: 0;
     right:0;
-    z-index:1;
+    z-index:1031;
     background-color:@backgroundColor;
     height:auto;
+    max-height: 90vh;
     border-top: @mediumBorder solid;
     border-color: darken(@lightColor, 10%);
     padding: @mediumSpacing @defaultSpacing;
+    transition: height 1s;
 }
 .currentPlaylistContainer > .fixed-content > .btn {
     border-color: darken(@lightColor, 10%);
@@ -25,11 +27,30 @@
     padding-left: 60px;
 }
 
-.currentPlaylist p {
-    margin: 0;
+.currentPlaylist {
+    padding:0;
 }
-.currentPlaylistbtn {
-    border: none;
-    background: none;
-    margin: 0 @smallSpacing;
+.currentPlaylistControls {
+    position:initial;
+    z-index:auto;
+    height:30px;
+}
+.currentPlaylistControls > .controls-container {
+    background-color: @backgroundColor;
+    color: @text-color;
+    height:30px;
+}
+.currentPlaylistControls .iconButton, .currentPlaylistControls vg-time-display {
+    color: @text-color;    
+}
+
+.currentPlaylistControls vg-scrub-bar .container {
+    top:14px;
+}
+.currentPlaylistControls vg-scrub-bar [role=slider] {
+    background-color: darken(@backgroundColor, 10%);
+    margin: 0px;
+}
+.currentPlaylistControls vg-scrub-bar-current-time {
+    background-color: @primaryColor;
 }

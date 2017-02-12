@@ -14,10 +14,16 @@ var soundboxDirectives = angular.module('soundboxDirectives', []);
 
 var soundboxApp = angular.module('soundboxApp',
 [
+    'ngSanitize',
+    'com.2fdevs.videogular',
+			'com.2fdevs.videogular.plugins.controls',
+  'info.vietnamcode.nampnq.videogular.plugins.youtube',
     'soundboxServices',
     'soundboxDirectives',
     'soundboxRouting',
-    'soundboxControllers'
+    'soundboxControllers',
+    'ui.bootstrap',
+    'ngAnimate'
 ]);
 
 soundboxApp.run([

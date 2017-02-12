@@ -1,0 +1,20 @@
+﻿<div class="currentPlaylist">
+    <videogular vg-theme="config.theme.url" vg-plays-inline="true" vg-player-ready="onPlayerReady($API)" vg-complete="onCompleteVideo()">
+        <vg-media vg-src="config.sources" vg-youtube="rel=1;showinfo=1" uib-collapse="collapse">
+        </vg-media>
+        <vg-controls class="currentPlaylistControls">
+            <vg-play-pause-button></vg-play-pause-button>
+            <vg-time-display>{{ currentTime  | date:'mm:ss':'+0000'}}</vg-time-display>
+            <vg-scrub-bar>
+                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+            </vg-scrub-bar>
+            <vg-time-display>{{ timeLeft | date:'mm:ss':'+0000' }}</vg-time-display>
+            <vg-volume>
+                <vg-mute-button></vg-mute-button>
+                <vg-volume-bar></vg-volume-bar>
+            </vg-volume>
+        </vg-controls>
+    </videogular>
+    <div uib-collapse="collapse">
+    </div>
+</div>
