@@ -295,7 +295,7 @@
     <Content Include="Content\videogular-themes-default\fonts\videogular.eot" />
     <Content Include="Content\videogular-themes-default\fonts\videogular.ttf" />
     <Content Include="Content\videogular-themes-default\fonts\videogular.woff" />
-    <None Include="Properties\PublishProfiles\mattwehner - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\mattwehner.com - Web Deploy.pubxml" />
     <None Include="Scripts\jquery\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap\bootstrap.js" />
     <Content Include="Scripts\bootstrap\bootstrap.min.js" />
